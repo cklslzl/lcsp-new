@@ -88,10 +88,10 @@
 		  </div>
 		  
 		  <mu-tabs :value="activeTab" lineClass="reset-line-class" @change="handleTabChange" class="header headerTabHeightStatic" >
-		  	<mu-tab value="tab1" title="待审" iconClass="icon-daishen"   slot="default"/>
-		    <mu-tab value="tab2" title="待阅" iconClass="icon-daiyue"  slot="default"/>
-		    <mu-tab value="tab3" title="最近审批" iconClass="icon-zjsp"   slot="default"/>
-		    <mu-tab value="tab4"  title="最近提交" iconClass="icon-zjtj"   slot="default"/>
+		  	<mu-tab value="tab1" title="待审" > <i class="icon-tab icon-daishen"></i> <!--<img class="icon-daishen" src="../../../static/img/icon_not_audited2@2x.png"/>	--></mu-tab>
+		    <mu-tab value="tab2" title="待阅" >	<i class="icon-tab icon-daiyue"></i> <!--<img class="icon-daiyue" src="../../../static/img/icon_pending_reading2@2x.png"/>-->	</mu-tab>
+		    <mu-tab value="tab3" title="最近审批"> <i class="icon-tab icon-zjsp"></i> <!--<img class="icon-zjsp" src="../../../static/img/icon_recent_approval2@2x.png"/>-->	</mu-tab>
+		    <mu-tab value="tab4"  title="最近提交" >	<i class="icon-tab icon-zjtj"></i> <!--<img class="icon-zjtj" src="../../../static/img/icon_recently_submitted2@2x.png"/>--></mu-tab>
 		  	
 			  <!--<mu-tab value="tab1" title="待审" icon="account_box"/>
 		    <mu-tab value="tab2" title="待阅" icon="access_time"/>

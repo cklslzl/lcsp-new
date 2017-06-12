@@ -69,15 +69,47 @@ $color-yellow-2:#faa848;
         .mu-tab-text.has-icon{
             margin-top: -4px;
         }
-        
+        .icon-daishen{
+            background:url(../../../static/img/icon_not_audited2@2x.png) center ;  
+        }
+        .icon-daiyue{
+            background:url(../../../static/img/icon_pending_reading2@2x.png) center ;
+        }
+        .icon-zjsp{
+            background:url(../../../static/img/icon_recent_approval2@2x.png) center ;
+        }
+        .icon-zjtj{
+            background:url(../../../static/img/icon_recently_submitted2@2x.png) center ;
+        }
+        .icon-tab{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+        }
         .mu-tab-active{
               background: $color-blue-3d98de;
             div{
                 color: $color-white;
             }
-        }
-        .icon-daishen{
-//          background: url(../../assets/logo.png);
+            .icon-daishen{
+                background:url(../../../static/img/icon_not_audited@2x.png) center ;  
+            }
+            .icon-daiyue{
+                background:url(../../../static/img/icon_pending_reading@2x.png) center ;
+            }
+            .icon-zjsp{
+                background:url(../../../static/img/icon_recent_approval@2x.png) center ;
+            }
+            .icon-zjtj{
+                background:url(../../../static/img/icon_recently_submitted@2x.png) center ;
+            }
+            .icon-tab{
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background-size: cover;
+            }
         }
         
     } 
