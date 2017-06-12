@@ -1,0 +1,130 @@
+
+/*color*/
+$color-white:#ffffff;
+
+/*灰色系*/
+$color-grey-1:#bababa;
+$color-grey-2:#cccccc;
+$color-grey-3:#ebebeb;
+$color-grey-4:#ededed;
+$color-grey-5:#5e5e5e;
+$color-grey-6:#8a8a8a;
+
+/*现在用到的颜色*/
+$color-grey-666666:#666666;
+$color-grey-fbfbfb:#fbfbfb;
+$color-grey-999999:#999999;
+$color-grey-333333:#333333;
+
+$color-grey-blue-6:#e9edf0;
+
+/*黑色系*/
+$color-black-1:#000000;
+$color-black-2:#101010;
+
+/*蓝色系*/
+$color-blue-1:#d4e3ef;
+$color-blue-2:#6c75ad;
+$color-blue-3:#436b99;
+$color-blue-4:#363951;
+$color-blue-5:#d1e4f0;
+$color-blue-6:#4c6a95;
+
+$color-blue-3d98de:#3d98de;
+
+
+/*现在用到的颜色*/
+$color-blue-7:#0165fe;
+
+
+/*黄色系*/
+$color-yellow-1:#ff9800;
+$color-yellow-2:#faa848;
+
+/*元素颜色*/
+
+
+
+.container{
+    .header{
+        background: $color-grey-fbfbfb;
+        *{
+            transition:none;
+            background: none;
+        }
+        .reset-line-class{
+            //transition:none;
+            background: none;
+        }
+        .mu-tab-link{
+            height: 100%;
+            min-height: 0; 
+            padding-top: 0px; 
+            padding-bottom: 0px; 
+        }
+        div{
+            color: $color-grey-999999;
+            
+        }
+        .mu-tab-text.has-icon{
+            margin-top: -4px;
+        }
+        
+        .mu-tab-active{
+              background: $color-blue-3d98de;
+            div{
+                color: $color-white;
+            }
+        }
+        .icon-daishen{
+//          background: url(../../assets/logo.png);
+        }
+        
+    } 
+    .contentHeightStatic{
+        .panel-container:last-child{
+            padding-bottom: 10px;
+        }
+        
+    }
+    .panel-container{//列表面板
+        padding: 10px;
+        padding-bottom: 0;
+        .panel-wrapper{
+            padding: 14px;
+            background: $color-white;
+            .panel-head{
+                .panel-head-left{
+                    color:$color-grey-666666;
+                    float: left;
+                }
+                .panel-head-right{
+                    color: $color-grey-999999;
+                    font-size: 12px;
+                    float: right;
+                }
+            }
+            .panel-title{
+                font-size: 16px;
+                color: $color-grey-333333;
+                font-weight: bold;
+                padding: 10px 0 10px 0;
+                .panel-title-left{
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .panel-content{
+                color: $color-grey-666666;
+                .panel-content-top{
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                }
+            }
+            
+        }
+    }
+}

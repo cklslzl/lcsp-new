@@ -1,0 +1,44 @@
+@import "color";
+//@import "main";
+
+$headerVavHeight: 50px;/*最顶部导航头高度*/
+$headerTabHeight: 60px;/*顶部tab高度*/
+
+
+.headerVavHeightStatic {
+  height: $headerVavHeight;
+  line-height: $headerVavHeight;
+}
+.headerTabHeightStatic {
+  height: $headerTabHeight;
+  line-height: $headerTabHeight;
+  display: block;
+}
+.contentHeightStatic {
+    height: calc(100vh - 110px); /*内容固定高度为可视高度减去顶部导航高度（ $headerVavHeight） 和顶部tab的高度（ $headerTabHeight）的值，为了滚动条只出现在内容区域，而头部固定住*/
+    overflow: auto;
+    position: relative;
+}
+.hideTab{
+    .headerTabHeightStatic{
+        display: none;
+    }
+    .contentHeightStatic{
+        height: calc(100vh - 50px);
+    }
+}
+.clearfix:after{
+    clear: both;
+    content: "";
+    height: 0;
+    display: block;
+}
+.clearfix{
+    zoom: 1;
+}
+.body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: $color-grey-4;
+}
+
