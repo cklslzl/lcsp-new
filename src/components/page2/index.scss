@@ -1,0 +1,370 @@
+/*color*/
+
+$color-white:#ffffff;
+
+/*灰色系*/
+
+$color-grey-0:#aaaaaa;
+$color-grey-1:#bababa;
+$color-grey-2:#cccccc;
+$color-grey-3:#ebebeb;
+$color-grey-4:#ededed;
+$color-grey-5:#5e5e5e;
+$color-grey-6:#8a8a8a;
+$color-grey-7:#dddddd;
+
+/*现在用到的颜色*/
+
+$color-grey-666666:#666666;
+$color-grey-fbfbfb:#fbfbfb;
+$color-grey-999999:#999999;
+$color-grey-333333:#333333;
+$color-grey-eeeeee:#eeeeee;
+$color-grey-blue-6:#e9edf0;
+$color-grey-f8f8f8:#f8f8f8;
+$color-grey-f4f4f4:#f4f4f4;
+$color-grey-a1a1a1:#a1a1a1;
+$color-grey-6f6f6f:#6f6f6f;
+$color-grey-f3f3f3:#f3f3f3;
+
+/*黑色系*/
+
+$color-black-1:#000000;
+$color-black-2:#101010;
+$color-black-3:#444444;
+$color-black-4:#333333;
+
+/*蓝色系*/
+
+$color-blue-1:#d4e3ef;
+$color-blue-2:#6c75ad;
+$color-blue-3:#436b99;
+$color-blue-4:#363951;
+$color-blue-5:#d1e4f0;
+$color-blue-6:#4c6a95;
+$color-blue-3d98de:#3d98de;
+$color-blue-71b5ff:#71b5ff;
+$color-blue-3C98DB:#3C98DB;
+$color-blue-AFCDEF:#AFCDEF;
+$color-blue-3D97DD:#3D97DD;
+$color-blue-AFCDF0:#AFCDF0;
+$color-blue-3F97DE:#3F97DE;
+
+/*现在用到的颜色*/
+
+$color-blue-7:#0165fe;
+
+/*黄色系*/
+
+$color-yellow-1:#ff9800;
+$color-yellow-2:#faa848;
+$color-yellow-FD954D: #FD954D;
+$color-yellow-FEF9F5: #FEF9F5;
+
+/*元素颜色*/
+
+.page-detail {
+    /* 待阅详情 */
+    .container {
+        .page-1 {
+            background: $color-white;
+            padding-bottom: 10px;
+        }
+        .d-padding-top {
+            padding-top: 20px;
+            background: $color-white;
+        }
+        /* 设置appBar颜色为蓝色 */
+        .mu-appbar {
+            background-color: $color-blue-3d98de;
+        }
+        /* 头部标题 */
+        .title {
+            color: $color-grey-0;
+            font-size: 14px;
+            font-family: "PingFang SC 中粗";
+            font-weight: 50;
+            padding: 5px 5px;
+        }
+        /* 设置appBar颜色为蓝色 */
+        .title-content {
+            color: $color-black-4;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 0px 5px;
+            word-wrap: break-word;
+        }
+        /* 设置子标题样式 */
+        .sub-title {
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            color: $color-white;
+            padding-left: 15px;
+            background: $color-blue-AFCDEF;
+            font-weight: bold;
+        }
+        .sub-content {
+            color: $color-grey-666666;
+        }
+        /* 设置三级标题样式 */
+        .thrid-title {
+            background: $color-white;
+            color: $color-blue-3C98DB;
+        }
+        /* 设置子链接样式 */
+        .sp-link {
+            background: $color-white;
+            padding: 10px 0px;
+        }
+        .link-detail {
+            background: $color-yellow-FEF9F5;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+            width: 85%;
+            margin: 0 auto;
+            border-radius: 3px;
+            border: 1px solid $color-yellow-FD954D;
+            color: $color-yellow-FD954D;
+            a {
+                color: $color-yellow-FD954D;
+            }
+        }
+        /* 设置子链接样式2*/
+        .sp-link2 {
+            background: $color-white;
+        }
+        .link2-detail {
+            background: $color-white;
+            text-align: center;
+            font-size: 16px;
+            color: $color-blue-3D97DD;
+        }
+        /* 设置表格超出换行 */
+        .mu-table {
+            table-layout: fixed;
+        }
+        /* 设置表格td样式 */
+        .mu-td {
+            font-size: 15px;
+            white-space: normal;
+            padding: 10px;
+        }
+        /* 设置表格左侧td 标题样式 */
+        .td-title {
+            //           width: 120px;
+            width: 36%;
+            color: $color-grey-666666;
+            word-break: break-all;
+        }
+        /* 设置表格右侧td 内容样式 */
+        .td-content {
+            color: $color-grey-333333;
+        }
+        /* 设置表格左侧td样式 */
+        .mu-sub-header {
+            font-size: 15px;
+        }
+        .mu-content-block {
+            font-size: 15px;
+        }
+        .panel-body {
+            padding: 10px 10px 0px 10px;
+            .sp-header {
+                background: $color-grey-fbfbfb;
+                .icon-up-and-down {
+                    display: inline-block;
+                    background-size: cover;
+                    position: relative;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url(../../../static/img/icon_merge@2x.png);
+                }
+                .icon-up {
+                    transform: rotateX(180deg);
+                }
+                .icon-down {}
+            }
+            .sp-content {
+                background: $color-grey-fbfbfb;
+                .mu-thead,
+                .mu-tr {
+                    &:first-of-type{
+                        border-top: 1px solid $color-grey-f3f3f3;
+                    }
+                    border-bottom: 1px solid $color-grey-f3f3f3;
+                    .td-title{
+                        border-right: 1px solid $color-grey-f3f3f3;
+                    }
+                }
+            }
+        }
+        /*流程记录*/
+        .process-content {
+            //height: 180px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: $color-white;
+            div {
+                border: 0px solid $color-yellow-FD954D;
+            }
+            .process-content-left {
+                width: 10%;
+                float: left;
+                height: 100%;
+                .circle {
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 25px;
+                    height: 25px;
+                    background: $color-blue-AFCDF0;
+                    .icon-done {
+                        display: inline-block;
+                        background-size: cover;
+                        position: relative;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url(../../../static/img/icon_select_yes@2x.png);
+                    }
+                }
+                .vertical-line {
+                    float: left;
+                    padding-right: 12px;
+                    border-right: 1px solid $color-grey-7;
+                    //height: 156px;
+                }
+            }
+            .process-content-right {
+                width: 88%;
+                margin-left: 3px;
+                float: left;
+                height: 100%;
+                .first-content {
+                    background-color: $color-grey-f3f3f3;
+                    padding: 4px 15px;
+                    border-radius: 6px;
+                    .first-content-left {
+                        float: left;
+                        width: 60%;
+                        font-weight: bold;
+                        text-align: left;
+                        line-height: 50px;
+                    }
+                    .first-content-right {
+                        float: right;
+                        text-align: right;
+                        width: 40%;
+                    }
+                }
+                .second-content {
+                    //margin: 15px 0;
+                    padding: 15px;
+                    .second-content-left {
+                        float: left;
+                        width: 100%;
+                        text-align: left;
+                        color: $color-blue-3F97DE;
+                    }
+                    .second-content-right {
+                        float: right;
+                        text-align: right;
+                        width: 39%;
+                    }
+                }
+                .third-content {
+                    float: left;
+                    padding: 15px;
+                    padding-top: 0;
+                }
+            }
+        }
+        /*流程结束*/
+        .process-over {
+            height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: $color-white;
+            .process-content-left {
+                width: 10%;
+                float: left;
+                height: 100%;
+                .circle {
+                    border-radius: 50%;
+                    width: 25px;
+                    height: 25px;
+                    border: 1px solid $color-grey-1;
+                    .icon-done {
+                        display: inline-block;
+                        background-size: cover;
+                        position: relative;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url(../../../static/img/icon_select_yes@2x.png);
+                    }
+                }
+            }
+            .process-content-right {
+                width: 88%;
+                margin-left: 3px;
+                float: left;
+                height: 100%;
+                .first-content {
+                    background-color: $color-grey-f3f3f3;
+                    padding: 4px 15px;
+                    border-radius: 6px;
+                    .first-content-left {
+                        float: left;
+                        width: 70%;
+                        font-weight: bold;
+                        text-align: left;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+        .contentHeightStatic {
+            .panel-container:last-child {
+                padding-bottom: 10px;
+            }
+        }
+        .panel-container {
+            //列表面板
+            padding: 10px;
+            padding-bottom: 0;
+            .panel-wrapper {
+                border-radius: 3px;
+                padding: 14px;
+                background: $color-white;
+                //              height: 290px;
+                position: relative;
+                .sp-content {
+                    background: $color-white;
+                }
+                .icon-approval {
+                    display: inline-block;
+                    background-size: cover;
+                    position: absolute;
+                    width: 90px;
+                    height: 72px;
+                    right: 20px;
+                    top: 18px;
+                    background-image: url(../../../static/img/icon_approval@2x.png);
+                }
+            }
+        }
+        .panel-footer {
+            //底部
+            padding: 10px;
+            padding-bottom: 0;
+            .panel-footer-wrapper {
+                border-radius: 3px;
+                padding: 14px;
+                background: $color-white;
+                height: 50px;
+                position: relative;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

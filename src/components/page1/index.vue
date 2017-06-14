@@ -9,6 +9,7 @@
       <mu-raised-button primary class="md-raised md-primary">跳转到index</mu-raised-button>
     </router-link>
   </div>-->
+  <!--<router-link :to="{ name: 'page1'}">跳转到page1</router-link>-->
   <scroller 
   :on-refresh="refresh"
   :on-infinite="infinite">
@@ -16,7 +17,7 @@
 		<div class="panel-wrapper">
 			<div class="panel-head clearfix">
   				<div class="panel-head-left">
-  					<!--发起人：李依依-->
+  					发起人：李依依
   					{{testItem.name}}
   				</div>
   				<div class="panel-head-right">

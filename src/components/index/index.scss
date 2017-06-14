@@ -15,6 +15,7 @@ $color-grey-666666:#666666;
 $color-grey-fbfbfb:#fbfbfb;
 $color-grey-999999:#999999;
 $color-grey-333333:#333333;
+$color-grey-eeeeee:#eeeeee;
 
 $color-grey-blue-6:#e9edf0;
 
@@ -31,6 +32,8 @@ $color-blue-5:#d1e4f0;
 $color-blue-6:#4c6a95;
 
 $color-blue-3d98de:#3d98de;
+$color-blue-71b5ff:#71b5ff;
+
 
 
 /*现在用到的颜色*/
@@ -41,122 +44,192 @@ $color-blue-7:#0165fe;
 $color-yellow-1:#ff9800;
 $color-yellow-2:#faa848;
 
-/*元素颜色*/
+$color-yellow-fd954e:#fd954e;
 
 
+/*按钮*/
+@mixin btn-default{
+    width: 100%;
+    height: 44px;
+    border: none;
+    outline: none;
+     border-radius: 4px; 
+     cursor: pointer;
+}
 
+
+/*公共样式*/
+.title-font-bold{
+    color: $color-grey-333333;
+    font-weight: bold;
+    font-size: 16px;
+}
+.font-blue-1{
+    color:$color-blue-3d98de;
+} 
+.btn-wrap{
+    button,input{
+        @include btn-default
+    }
+    .btn-default{
+        background-color: $color-grey-eeeeee;
+        color: $color-grey-666666; 
+    }
+    .btn-default-orange{
+        background-color: $color-yellow-fd954e;
+        color: $color-white; 
+    }
+}
 .container{
-    .header{
-        background: $color-grey-fbfbfb;
-        *{
-            transition:none;
-            background: none;
-        }
-        .reset-line-class{
-            //transition:none;
-            background: none;
-        }
-        .mu-tab-link{
-            height: 100%;
-            min-height: 0; 
-            padding-top: 0px; 
-            padding-bottom: 0px; 
-        }
-        div{
-            color: $color-grey-999999;
-            
-        }
-        .mu-tab-text.has-icon{
-            margin-top: -4px;
-        }
-        .icon-daishen{
-            background:url(../../../static/img/icon_not_audited2@2x.png) center ;  
-        }
-        .icon-daiyue{
-            background:url(../../../static/img/icon_pending_reading2@2x.png) center ;
-        }
-        .icon-zjsp{
-            background:url(../../../static/img/icon_recent_approval2@2x.png) center ;
-        }
-        .icon-zjtj{
-            background:url(../../../static/img/icon_recently_submitted2@2x.png) center ;
-        }
-        .icon-tab{
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            background-size: cover;
-        }
-        .mu-tab-active{
-              background: $color-blue-3d98de;
+        .header{
+            background: $color-grey-fbfbfb;
+            *{
+                transition:none;
+                background: none;
+            }
+            .reset-line-class{
+                //transition:none;
+                background: none;
+            }
+            .mu-tab-link{
+                height: 100%;
+                min-height: 0; 
+                padding-top: 0px; 
+                padding-bottom: 0px; 
+            }
             div{
-                color: $color-white;
+                color: $color-grey-999999;
+                
+            }
+            .mu-tab-text.has-icon{
+                margin-top: -4px;
             }
             .icon-daishen{
-                background:url(../../../static/img/icon_not_audited@2x.png) center ;  
+                background:url(../../../static/img/icon_not_audited2@2x.png) center ;  
             }
             .icon-daiyue{
-                background:url(../../../static/img/icon_pending_reading@2x.png) center ;
+                background:url(../../../static/img/icon_pending_reading2@2x.png) center ;
             }
             .icon-zjsp{
-                background:url(../../../static/img/icon_recent_approval@2x.png) center ;
+                background:url(../../../static/img/icon_recent_approval2@2x.png) center ;
             }
             .icon-zjtj{
-                background:url(../../../static/img/icon_recently_submitted@2x.png) center ;
+                background:url(../../../static/img/icon_recently_submitted2@2x.png) center ;
             }
             .icon-tab{
                 display: inline-block;
-                width: 24px;
-                height: 24px;
                 background-size: cover;
+                position: relative;
+                width: 24px;
+                height: 24px;  
+                top: 5px;
             }
-        }
-        
-    } 
-    .contentHeightStatic{
-        .panel-container:last-child{
-            padding-bottom: 10px;
-        }
-        
-    }
-    .panel-container{//列表面板
-        padding: 10px;
-        padding-bottom: 0;
-        .panel-wrapper{
-            padding: 14px;
-            background: $color-white;
-            .panel-head{
-                .panel-head-left{
-                    color:$color-grey-666666;
-                    float: left;
+            .mu-tab-active{
+                  background: $color-blue-3d98de;
+                div{
+                    color: $color-white;
                 }
-                .panel-head-right{
-                    color: $color-grey-999999;
-                    font-size: 12px;
-                    float: right;
+                .icon-daishen{
+                    background:url(../../../static/img/icon_not_audited@2x.png) center ;  
                 }
-            }
-            .panel-title{
-                font-size: 16px;
-                color: $color-grey-333333;
-                font-weight: bold;
-                padding: 10px 0 10px 0;
-                .panel-title-left{
-                    overflow: hidden;
-                    text-overflow:ellipsis;
-                    white-space: nowrap;
+                .icon-daiyue{
+                    background:url(../../../static/img/icon_pending_reading@2x.png) center ;
                 }
-            }
-            .panel-content{
-                color: $color-grey-666666;
-                .panel-content-top{
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 2;
-                    overflow: hidden;
+                .icon-zjsp{
+                    background:url(../../../static/img/icon_recent_approval@2x.png) center ;
+                }
+                .icon-zjtj{
+                    background:url(../../../static/img/icon_recently_submitted@2x.png) center ;
+                }
+                .icon-tab{
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-size: cover;
                 }
             }
             
+        } 
+    }
+/*公共样式*/
+.page-index{
+    .container{
+        .contentHeightStatic{
+            .panel-container:last-child{
+                padding-bottom: 10px;
+            } 
+        }
+        .panel-container{//列表面板
+            padding: 10px;
+            padding-bottom: 0;
+            .panel-wrapper{
+                padding: 14px;
+                background: $color-white;
+                height: 120px;
+                position: relative;
+                .panel-footer{
+                    position: absolute;
+                    left: 14px;
+                    right: 14px;
+                    bottom: 20px;
+                    .panel-footer-left{
+                        color:$color-blue-71b5ff;
+                        float: left;
+                        font-size: 15px;
+                        .icon-user{
+                            width: 15px;
+                            height: 15px;
+                            display: inline-block;
+                            position: relative;
+                            top: 2px;
+                            background: url(../../../static/img/icon_personal@2x.png) center;
+                            background-size: cover;
+                        }
+                    }
+                    .panel-footer-right{
+                        color: $color-grey-999999;
+                        font-size: 12px;
+                        float: right;
+                    }
+                }
+                .panel-title{
+                    font-size: 16px;
+                    color: $color-grey-333333;
+                    font-weight: bold;
+                    padding: 10px 0 10px 0;
+                    .panel-title-left{
+                        /*overflow: hidden;
+                        text-overflow:ellipsis;
+                        white-space: nowrap;*/
+                       max-height: 46px;
+                       display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                        .icon-lock{
+                            width: 15px;
+                            height: 15px;
+                            display: inline-block;
+                            position: relative;
+                            top: 2px;
+                            background: url(../../../static/img/icon_lock@2x.png) center;
+                            background-size: cover;
+                        }
+                        
+                    }
+                }
+                .panel-content{
+                    color: $color-grey-666666;
+                    .panel-content-top{
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                    }
+                }
+                
+            }
         }
     }
 }
+

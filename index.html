@@ -4,14 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>流程审批</title>
-  <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
-  <link rel=stylesheet href="http://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="./static/yt.common.plugins.js"></script>
   <!--<script src="cordova.js"></script>
   <script src="cordova_plugins.js"></script>-->
 </head>
 <body class="body">
-	
-<header id="index-header" >
+
+<header id="index-header" class="index-header">
   <back class="back-btn"></back>
 </header>
 <div id="app"></div>
@@ -22,11 +21,16 @@
     margin: 0;
     height: 100%;
   }
+  .index-header{
+  	position: relative !important;
+  }
+	#index-header>div{
+		z-index: 10;
+	}
 
-  
 </style>
 
-<script src="./static/common.plugins.1.0.1.js"></script>
+<!--<script src="./static/common.plugins.1.0.1.js"></script>-->
 <script>
 var nav = new YuTong.Nav({ele: '#index-header'});
 nav.init();
